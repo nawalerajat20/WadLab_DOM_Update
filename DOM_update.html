@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Updating DOM using jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <center>
+      <div
+        style="
+          border: 2px solid black;
+          margin: 180px 350px 0px 350px;
+          padding: 10px 30px 10px 30px;
+          border-radius: 20px;
+          background-color: rgb(234, 214, 186);
+        "
+      >
+        <h1
+          id="heading"
+          style="
+            color: rgb(169, 109, 31);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+              sans-serif;
+          "
+        >
+          Student Info
+        </h1>
+        <p
+          id="message"
+          style="
+            color: rgb(174, 84, 84);
+            font-size: 22px;
+            font-weight: 700;
+            font-family: 'Courier New', Courier, monospace;
+          "
+        >
+          Hiii! My name is Nawale Rajat Gitaram .Currently I am persuing my
+          Graduation in Second Year IT branch in D.Y.Patil College of
+          Engineering Akurdi. Innovative and technically astute Engineer,
+          well-versed in web development to precisely meet diverse needs.
+          Demonstrates mastery of multiple programming languages includes CPP,
+          Java, Python, and Javascript and proactively keeps up with
+          industry trends. Contact: 7517426517; Email : nawalerajat20@gmail.com
+        </p>
+        <button
+          style="
+            height: 50px;
+            width: 50%;
+            background-color: cadetblue;
+            color: antiquewhite;
+            border: none;
+            border-radius: 10px;
+          "
+        >
+          Update Information
+        </button>
+      </div>
+    </center>
+    <script>
+      // Wait for the document to be ready
+      $(document).click(function () {
+        // Update the heading text
+        $("#heading").text("Student Information");
+
+        // Update the message text and add a CSS class
+        $("#message")
+          .text(
+            "Hiii! My name is Nawale Rajat Gitaram .Currently, I am persuing my Graduation in Third Year IT branch in D.Y.Patil College of Engineering Akurdi. Innovative and technically astute Engineer, well-versed in web development to precisely meet diverse needs. Demonstrates mastery of multiple programming languages includes CPP, Java, Python, and Javascript and proactively keeps up with industry trends. Contact: 9763383396; Email : rajatnawale02@gmail.com"
+          )
+          .addClass("highlight");
+      });
+    </script>
+  </body>
+</html>
